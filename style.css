@@ -10,4 +10,34 @@
 
 body {
   font-size: 1.6rem;
+  min-height: 100vh;
+}
+
+.page {
+  width: 59.2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main {
+  margin-bottom: 7.2rem;
+}
+
+main img {
+  margin-bottom: 7.2rem;
+}
+
+main h1 {
+  margin-bottom: 4rem;
+}
+
+footer {
+  border-top: 1px solid red;
+
+  padding-top: 1rem;
+  margin-bottom: 3.3rem;
+}
+
+footer a + a {
+  margin-left: 2.5rem;
 }
