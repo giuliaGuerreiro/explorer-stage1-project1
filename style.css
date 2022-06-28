@@ -3,6 +3,10 @@
 
   --ff-texting: 'Open Sans', sans-serif;
   --ff-heading: 'Inter', sans-serif;
+  --fc-heading: hsla(0, 0%, 0%, 1);
+  --fc-texting-primary: hsla(256, 5%, 50%, 1);
+  --fc-texting-secondary: hsla(36, 100%, 50%, 1);
+  --bc-footer: hsla(210, 19%, 94%, 1);
 }
 
 * {
@@ -12,6 +16,7 @@
 }
 
 body {
+  color: var(--fc-texting-primary);
   font-size: 1.4rem;
   line-height: 2.8rem;
   font-family: var(--ff-texting);
@@ -35,6 +40,7 @@ main img {
 }
 
 main h1 {
+  color: var(--fc-heading);
   font-family: var(--ff-heading);
   font-weight: normal;
   font-size: 4.9rem;
@@ -47,12 +53,16 @@ main h1 span {
   font-weight: bold;
 }
 
+main span {
+  color: var(--fc-texting-secondary);
+}
+
 main p + p {
   margin-top: 3.2rem;
 }
 
 footer {
-  border-top: 1px solid red;
+  border-top: 1px solid var(--bc-footer);
 
   padding-top: 1rem;
   margin-bottom: 3.3rem;
@@ -61,4 +71,14 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 2.7rem;
+}
+
+footer a {
+  color: var(--fc-texting-secondary)
+}
+
+#balls {
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }
